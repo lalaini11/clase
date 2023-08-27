@@ -47,22 +47,22 @@ print("la suma de los números impares es ", k)
 #Elaborar un algoritmo que encuentre el factorial de un número comprendido entre 0 y 20. 
 #En caso de que se cometa un error o se haya terminado de realizar la tarea solicitada, 
 #que el programa de la opción de volver a empezar.
-x=int(input("ingrese un número: "))
-if x==0:
-    print("El factorial es", x)
-while x<0:
-    print("No se puede calcular.")
+comprobar=True
+while comprobar == True:
     x=int(input("ingrese un número: "))
-while x>20:
-    print("Ingrese un número menor a 20")
-    x=int(input("ingrese un número: "))
-else:
-    k=1
-    factorial=1
-    while k<=x:
-        factorial= factorial*k
-        k=k+1
-    print("el factorial del número es ", factorial)
-x=int(input("ingrese un número: "))
-
-    
+    if x==0:
+        print("El factorial es", x)
+    while x<0:
+        print("No se puede calcular.")
+        x=int(input("ingrese un número: "))
+    while x>20:
+        print("Ingrese un número menor a 20")
+        x=int(input("ingrese un número: "))
+    else:
+        k=1
+        factorial=1
+        while k<=x:
+            factorial= factorial*k
+            k=k+1
+        print("el factorial del número es ", factorial)
+        
